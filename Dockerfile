@@ -5,13 +5,13 @@ ENV RANCHER_CLI_VERSION 0.4.1
 
 RUN set -x \
   && apt-get update \
-  && apt-get install -y --no-install-recommends python-pip python-dev build-essential \
+  && apt-get install -y --no-install-recommends python-pip python-dev python-setuptools build-essential \
   && pip install --upgrade pip \
   && pip install --upgrade virtualenv \
   && pip install requests \
   && pip install baker \
   && pip install websocket-client \
-  && apt-get remove -y python-pip curl \
+  && apt-get remove -y python-pip \
   && rm -rf /var/lib/apt/lists/* \
   && curl -sL https://raw.githubusercontent.com/etlweather/gaucho/master/services.py -o rancher.py \
   && mv rancher.py /usr/bin/rancher.py \
