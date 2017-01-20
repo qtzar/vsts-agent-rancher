@@ -1,5 +1,7 @@
 ## Visual Studio Team Services Agent with Rancher CLI
 
+[![](https://images.microbadger.com/badges/image/qtzar/vsts-agent-rancher.svg)](https://microbadger.com/images/qtzar/vsts-agent-rancher "Get your own image badge on microbadger.com")
+
 This image will create a VSTS Agent with the Rancher CLI installed. The base image is microsoft/vsts-agent:ubuntu-16.04-docker-1.12.1-standard with Rancher CLI and a Rancher API python
 
 #### VSTS Agent Setup
