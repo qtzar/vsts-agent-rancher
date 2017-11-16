@@ -1,4 +1,4 @@
-FROM microsoft/vsts-agent:ubuntu-16.04-docker-17.03.0-ce-standard
+FROM microsoft/vsts-agent:ubuntu-16.04-docker-17.06.0-ce-standard
 MAINTAINER Declan Lynch <dlynch@qtzar.com>
 
 ENV RANCHER_CLI_VERSION 0.4.1
